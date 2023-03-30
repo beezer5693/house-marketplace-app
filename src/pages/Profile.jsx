@@ -52,7 +52,6 @@ function Profile() {
 				});
 			});
 
-			console.log(listings);
 			setUserListings(listings);
 			setLoading(false);
 		};

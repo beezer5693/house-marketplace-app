@@ -93,7 +93,7 @@ function Listing() {
 					<li>
 						{listing.bathrooms > 1 ? `${listing.bathrooms} Baths` : '1 Bath'}
 					</li>
-					<li>{listing.parking && 'Parking Spot'}</li>
+					{listing.parking && listing.type === 'rent' && <li>Parking Spot</li>}
 					<li>{listing.furnished && 'Furnished'}</li>
 				</ul>
 				<p className='listingLocationTitle'>Location</p>
